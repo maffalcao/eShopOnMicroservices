@@ -14,7 +14,7 @@ We have implemented below **features over the run-aspnetcore-microservices repos
 - Repository Pattern Implementation
 - Swagger Open API implementation
 
-#### Basket microservice which includes (under construction);
+#### Basket microservice which includes;
 
 - ASP.NET Web API application
 - REST API principles, CRUD operations
@@ -22,7 +22,7 @@ We have implemented below **features over the run-aspnetcore-microservices repos
 - Consume Discount **Grpc Service** for inter-service sync communication to calculate product final price
 - Publish BasketCheckout Queue with using **MassTransit and RabbitMQ**
 
-#### Discount microservice which includes (under construction);
+#### Discount microservice which includes (in development);
 
 - ASP.NET **Grpc Server** application
 - Build a Highly Performant **inter-service gRPC Communication** with Basket Microservice
