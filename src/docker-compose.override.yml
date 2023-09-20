@@ -58,7 +58,7 @@ services:
     depends_on:
       - basketdb     
     ports:
-      - "8001:80" 
+      - "8001:80"  
 
   catalog.api:
     container_name: catalog.api
