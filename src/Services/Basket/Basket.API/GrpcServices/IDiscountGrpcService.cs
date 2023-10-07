@@ -4,5 +4,5 @@ using System.Threading.Tasks;
 namespace Basket.API.GrpcServices;
 public interface IDiscountGrpcService
 {
-    Task<CouponModel> GetDiscount(string productName)
+    Task<CouponModel> GetDiscount(string productName);
 }

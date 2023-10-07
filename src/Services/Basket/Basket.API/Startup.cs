@@ -36,13 +36,14 @@ namespace Basket.API
 
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(c =>
-                c.Address = new Uri(Configuration.GetValue<string>("GrpcSettings:DiscountUrl")));
-            services.AddScoped
+                c.Address = new Uri(Configuration["GrpcSettings:DiscountUrl"]));           
+
 
             services.AddScoped<IDiscountGrpcService, DiscountGrpcService>();
-        }
+            //services.AddScoped<DiscountGrpcService>();
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+
+        }        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

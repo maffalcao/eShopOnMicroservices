@@ -47,7 +47,7 @@ public class DiscountService: DiscountProtoService.DiscountProtoServiceBase
     }
 
     public override async Task<CouponModel> UpdateDiscount(UpdateDiscountRequest request, ServerCallContext context)
-    {
+    {        
         var coupon = _mapper.Map<Coupon>(request.Coupon);
 
         await _repository.UpdateDiscount(coupon);
