@@ -1,4 +1,3 @@
-using Microsoft.Extensions.Configuration;
 using Ordering.API.Extensions;
 using Ordering.Application.DI;
 using Ordering.Infrastructure;
