@@ -1,4 +1,4 @@
-﻿using EventBus.Messages.Events;
+﻿namespace EventBus.Messages.Events;
 
 public class BasketCheckoutEvent : IntegrationBaseEvent
 {
@@ -20,4 +20,9 @@ public class BasketCheckoutEvent : IntegrationBaseEvent
     public string Expiration { get; set; }
     public string CVV { get; set; }
     public int PaymentMethod { get; set; }
+}
+
+public class BlaBlou
+{
+    public string Blei { get; set; }
 }
