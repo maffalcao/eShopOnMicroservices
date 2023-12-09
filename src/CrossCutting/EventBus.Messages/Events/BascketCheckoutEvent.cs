@@ -21,8 +21,3 @@ public class BasketCheckoutEvent : IntegrationBaseEvent
     public string CVV { get; set; }
     public int PaymentMethod { get; set; }
 }
-
-public class BlaBlou
-{
-    public string Blei { get; set; }
-}
